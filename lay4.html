@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-areas:
+                "banner banner"
+                "nav main"
+                "picture about"
+                "footer footer";
+        }
+        header {
+            grid-area: banner;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            grid-area: nav;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        main {
+            grid-area: main;
+            padding: 20px;
+        }
+        .picture {
+            grid-area: picture;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .about {
+            grid-area: about;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BANNER</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>MAIN CONTENT</h2>
+            <p></p>
+        </main>
+        <div class="picture">
+            <h3>PICTURE</h3>
+           
+        </div>
+        <div class="about">
+            <h3>ABOUT ME </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel libero nec odio tincidunt vestibulum.</p>
+        </div>
+        <footer>
+            <p>FOOTER </p>
+        </footer>
+    </div>
+</body>
+</html>
